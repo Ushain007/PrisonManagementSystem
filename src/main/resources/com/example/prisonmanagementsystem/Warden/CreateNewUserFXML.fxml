@@ -6,9 +6,27 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prisonmanagementsystem.Warden.CreateNewUserFXML">
+   <children>
+      <Label layoutX="14.0" layoutY="68.0" text="User ID" />
+      <Label layoutX="14.0" layoutY="110.0" text="Full Name" />
+      <Label layoutX="14.0" layoutY="156.0" text="Role" />
+      <Label layoutX="372.0" layoutY="66.0" text="E-mail" />
+      <Label layoutX="372.0" layoutY="108.0" text="Contact" />
+      <TextField fx:id="fullNameTextField" layoutX="101.0" layoutY="105.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="emailTextField" layoutX="492.0" layoutY="62.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="contactTextField" layoutX="492.0" layoutY="105.0" prefHeight="26.0" prefWidth="202.0" />
+      <ComboBox fx:id="roleComboBox" layoutX="101.0" layoutY="152.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label fx:id="generatedUserID" layoutX="101.0" layoutY="66.0" />
+      <Label layoutX="372.0" layoutY="155.0" text="Date of Birth" />
+      <Button layoutX="299.0" layoutY="250.0" mnemonicParsing="false" onAction="#createNewUserOnAction" prefHeight="26.0" prefWidth="146.0" text="Create new User" />
+      <Button layoutX="690.0" layoutY="460.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" text="Back" />
+      <Label fx:id="outputLabel" layoutX="368.0" layoutY="222.0" prefHeight="18.0" prefWidth="0.0" />
+      <DatePicker fx:id="dobDatePicker" layoutX="492.0" layoutY="151.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label layoutX="301.0" layoutY="14.0" text="User Management">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>
