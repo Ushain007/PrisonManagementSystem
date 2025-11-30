@@ -1,5 +1,7 @@
 package com.example.prisonmanagementsystem;
 
+import java.time.LocalDate;
+
 public class User {
     private String id, Name, phoneNo, email, address, gender, password;
     private LocalDate dateOfBirth;
