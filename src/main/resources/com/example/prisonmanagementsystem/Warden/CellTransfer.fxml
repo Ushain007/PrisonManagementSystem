@@ -6,9 +6,31 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="$CONTROLLER_NAME$"
-            prefHeight="400.0" prefWidth="600.0" >
-
+<AnchorPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prisonmanagementsystem.Warden.CellTransfer">
+   <children>
+      <Button layoutX="690.0" layoutY="460.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="30.0" prefWidth="100.0" text="Back" />
+      <Label layoutX="306.0" layoutY="14.0" text="Cell Management">
+         <font>
+            <Font name="Arial" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="75.0" prefHeight="18.0" prefWidth="126.0" text="Search by ID or Name" />
+      <TextField fx:id="searchByIDNameTextfield" layoutX="156.0" layoutY="71.0" prefHeight="26.0" prefWidth="325.0" />
+      <Button layoutX="495.0" layoutY="71.0" mnemonicParsing="false" onAction="#searchPrisonerOnAction" prefHeight="26.0" prefWidth="263.0" text="Search Prisoner" />
+      <Label layoutX="14.0" layoutY="126.0" prefHeight="18.0" prefWidth="126.0" text="Name" />
+      <Label layoutX="14.0" layoutY="160.0" prefHeight="18.0" prefWidth="126.0" text="Block" />
+      <Label layoutX="368.0" layoutY="126.0" prefHeight="18.0" prefWidth="126.0" text="Cell" />
+      <Label layoutX="368.0" layoutY="160.0" prefHeight="18.0" prefWidth="126.0" text="Security Level" />
+      <Label fx:id="nameOutputLabel" layoutX="156.0" layoutY="126.0" prefHeight="18.0" prefWidth="126.0" />
+      <Label fx:id="blockOutputLabel" layoutX="162.0" layoutY="160.0" prefHeight="18.0" prefWidth="126.0" />
+      <Label fx:id="cellOutputLabel" layoutX="494.0" layoutY="126.0" prefHeight="18.0" prefWidth="126.0" />
+      <Label fx:id="securityLevelOutputLabel" layoutX="494.0" layoutY="160.0" prefHeight="18.0" prefWidth="126.0" />
+      <Line endX="660.199951171875" layoutX="115.0" layoutY="220.0" startX="-100.0" />
+      <Label layoutX="15.0" layoutY="250.0" text="Block" />
+      <Label layoutX="15.0" layoutY="295.0" text="Cell" />
+      <TextField fx:id="blockTransferTextField" layoutX="105.0" layoutY="246.0" prefHeight="26.0" prefWidth="189.0" />
+      <TextField fx:id="cellTransferTextField" layoutX="105.0" layoutY="290.0" prefHeight="26.0" prefWidth="189.0" />
+      <Button layoutX="17.0" layoutY="344.0" mnemonicParsing="false" onAction="#confirmTransferOnAction" prefHeight="26.0" prefWidth="274.0" text="Confirm transfer" />
+      <Label fx:id="transferSuccessfulOutput" layoutX="535.0" layoutY="272.0" />
+   </children>
 </AnchorPane>
