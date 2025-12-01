@@ -16,10 +16,6 @@ public class WardenDashboardController
     public void handleLogout(ActionEvent actionEvent) {
     }
 
-    @Deprecated
-    public void releaseOrParoleRequestsOnAction(ActionEvent actionEvent) {
-    }
-
     @javafx.fxml.FXML
     public void disciplineRecordsOnAction(ActionEvent actionEvent) {
     }
