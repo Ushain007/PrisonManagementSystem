@@ -1,5 +1,7 @@
 package com.example.prisonmanagementsystem.Ushain_2320676.Librarian;
 
+import javafx.event.ActionEvent;
+
 public class LibrarianDashboardController
 {
     @javafx.fxml.FXML
