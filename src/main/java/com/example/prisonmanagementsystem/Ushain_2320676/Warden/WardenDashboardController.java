@@ -13,10 +13,6 @@ public class WardenDashboardController
     }
 
     @javafx.fxml.FXML
-    public void visitorRequestsOnAction(ActionEvent actionEvent) {
-    }
-
-    @javafx.fxml.FXML
     public void handleLogout(ActionEvent actionEvent) {
     }
 
