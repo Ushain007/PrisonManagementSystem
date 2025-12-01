@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prisonmanagementsystem.Ushain_2320676.Warden.MaintenanceRequestsFXML">
+   <children>
+      <Label layoutX="232.0" layoutY="14.0" text="Maintenance Request Review">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="65.0" text="Pending Requests:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TableView fx:id="maintenanceTableView" layoutX="24.0" layoutY="90.0" prefHeight="484.0" prefWidth="420.0">
+         <columns>
+            <TableColumn fx:id="colIssueType" prefWidth="100.0" text="Issue Type" />
+            <TableColumn fx:id="colBlock" prefWidth="80.0" text="Block" />
+            <TableColumn fx:id="colSeverity" prefWidth="80.0" text="Severity" />
+            <TableColumn fx:id="colStatus" prefWidth="80.0" text="Status" />
+            <TableColumn fx:id="colDate" prefWidth="79.20001220703125" text="Date" />
+         </columns>
+      </TableView>
+      <Label layoutX="475.0" layoutY="65.0" text="Request Details">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="100.0" text="Issue Type:" textFill="#666666" />
+      <Label fx:id="issueTypeLabel" layoutX="585.0" layoutY="100.0" text="---">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="130.0" text="Location:" textFill="#666666" />
+      <Label fx:id="locationLabel" layoutX="585.0" layoutY="130.0" text="---" />
+      <Label layoutX="475.0" layoutY="160.0" text="Severity:" textFill="#666666" />
+      <Label fx:id="severityLabel" layoutX="585.0" layoutY="160.0" text="---">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="475.0" layoutY="190.0" text="Description:" textFill="#666666" />
+      <Label fx:id="descriptionLabel" alignment="TOP_LEFT" layoutX="475.0" layoutY="210.0" prefHeight="50.0" prefWidth="310.0" style="-fx-border-color: #dedede; -fx-padding: 5;" wrapText="true" />
+      <Label layoutX="475.0" layoutY="270.0" text="Assign Maintenance Team:" />
+      <ComboBox fx:id="assignTeamComboBox" layoutX="475.0" layoutY="290.0" prefHeight="26.0" prefWidth="200.0" promptText="Select Team" />
+      <Label layoutX="475.0" layoutY="330.0" text="Warden's Remarks:" />
+      <TextArea fx:id="remarksTextArea" layoutX="475.0" layoutY="350.0" prefHeight="122.0" prefWidth="310.0" promptText="Enter instructions..." />
+      <Button layoutX="694.0" layoutY="548.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="25.0" prefWidth="90.0" text="Back" />
+      <Button layoutX="474.0" layoutY="487.0" mnemonicParsing="false" onAction="#approveRequestOnAction" prefHeight="50.0" prefWidth="142.0" text="Approve &amp; Assign" />
+      <Button layoutX="639.0" layoutY="487.0" mnemonicParsing="false" onAction="#rejectRequestOnAction" prefHeight="50.0" prefWidth="142.0" text="Reject Request" />
+   </children>
+</AnchorPane>
