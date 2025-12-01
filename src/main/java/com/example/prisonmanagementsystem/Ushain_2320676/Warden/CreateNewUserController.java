@@ -19,4 +19,9 @@ public class CreateNewUserController
 
     @javafx.fxml.FXML
     public void initialize() {
-    }}
+    }
+
+    @javafx.fxml.FXML
+    public void createNewUserOnAction(ActionEvent actionEvent) {
+    }
+}
