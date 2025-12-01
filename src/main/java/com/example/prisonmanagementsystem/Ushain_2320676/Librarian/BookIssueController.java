@@ -25,6 +25,8 @@ public class BookIssueController
     private Label borrowerTypeLabel;
     @javafx.fxml.FXML
     private Label borrowerNameLabel;
+    @javafx.fxml.FXML
+    private Label issueConfirmedLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
