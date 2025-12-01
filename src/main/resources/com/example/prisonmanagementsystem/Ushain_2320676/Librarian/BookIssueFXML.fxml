@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prisonmanagementsystem.Ushain_2320676.Librarian.BookIssueController">
+   <children>
+      <Label layoutX="276.0" layoutY="14.0" text="Issue Book to Borrower">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="686.0" layoutY="555.0" mnemonicParsing="false" onAction="#backOnAction" prefHeight="30.0" prefWidth="100.0" text="Back" />
+      <Label layoutX="35.0" layoutY="99.0" text="Book ID / Title:" />
+      <TextField fx:id="bookSearchTextField" layoutX="135.0" layoutY="95.0" prefHeight="26.0" prefWidth="353.0" />
+      <Button layoutX="506.0" layoutY="95.0" mnemonicParsing="false" onAction="#searchBookOnAction" text="Check Availability" />
+      <Label layoutX="35.0" layoutY="134.0" text="Title:" textFill="#666666" />
+      <Label fx:id="bookTitleLabel" layoutX="75.0" layoutY="134.0" text="---" />
+      <Label layoutX="215.0" layoutY="134.0" text="Author:" textFill="#666666" />
+      <Label fx:id="bookAuthorLabel" layoutX="265.0" layoutY="134.0" text="---" />
+      <Label layoutX="410.0" layoutY="135.0" text="Status:" textFill="#666666" />
+      <Label fx:id="bookStatusLabel" layoutX="460.0" layoutY="135.0" text="---" />
+      <Label layoutX="35.0" layoutY="214.0" text="Borrower ID:" />
+      <TextField fx:id="borrowerSearchTextField" layoutX="135.0" layoutY="210.0" prefHeight="26.0" prefWidth="354.0" />
+      <Button layoutX="506.0" layoutY="210.0" mnemonicParsing="false" onAction="#verifyUserOnAction" prefHeight="26.0" prefWidth="109.0" text="Verify User" />
+      <Label layoutX="35.0" layoutY="249.0" text="Name:" textFill="#666666" />
+      <Label fx:id="borrowerNameLabel" layoutX="80.0" layoutY="249.0" text="---" />
+      <Label layoutX="215.0" layoutY="249.0" text="Type:" textFill="#666666" />
+      <Label fx:id="borrowerTypeLabel" layoutX="255.0" layoutY="249.0" text="---" />
+      <Label layoutX="35.0" layoutY="333.0" text="Issue Date:" />
+      <DatePicker fx:id="issueDatePicker" layoutX="135.0" layoutY="329.0" prefHeight="26.0" prefWidth="354.0" />
+      <Label layoutX="35.0" layoutY="384.0" text="Return Date:" />
+      <DatePicker fx:id="returnDatePicker" layoutX="135.0" layoutY="379.0" prefHeight="26.0" prefWidth="354.0" />
+      <Button layoutX="506.0" layoutY="329.0" mnemonicParsing="false" onAction="#confirmIssueOnAction" prefHeight="76.0" prefWidth="110.0" text="Confirm Issue" />
+   </children>
+</AnchorPane>

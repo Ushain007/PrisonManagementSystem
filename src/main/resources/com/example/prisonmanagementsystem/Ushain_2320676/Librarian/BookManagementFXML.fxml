@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prisonmanagementsystem.Ushain_2320676.Librarian.BookManagementController">
+   <children>
+      <Label layoutX="315.0" layoutY="14.0" text="Add New Book">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="686.0" layoutY="555.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="30.0" prefWidth="100.0" text="Back" />
+      <Label layoutX="25.0" layoutY="103.0" text="Book Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookTitleTextField" layoutX="165.0" layoutY="100.0" prefHeight="26.0" prefWidth="370.0" />
+      <Label layoutX="25.0" layoutY="154.0" text="Author Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="authorNameTextField" layoutX="165.0" layoutY="151.0" prefHeight="26.0" prefWidth="370.0" />
+      <Label layoutX="27.0" layoutY="200.0" text="Category">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="categoryComboBox" layoutX="165.0" layoutY="197.0" prefHeight="26.0" prefWidth="370.0" promptText="Select Category" />
+      <Label layoutX="26.0" layoutY="254.0" text="Publication Year">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="publicationYearTextField" layoutX="165.0" layoutY="251.0" prefHeight="26.0" prefWidth="370.0" />
+      <Label layoutX="26.0" layoutY="313.0" text="Quantity">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantityTextField" layoutX="165.0" layoutY="310.0" prefHeight="26.0" prefWidth="370.0" />
+      <Label layoutX="25.0" layoutY="368.0" text="Section">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="bookSectionTextField" layoutX="165.0" layoutY="365.0" prefHeight="26.0" prefWidth="370.0" />
+      <Label fx:id="bookAddedMessageOutput" layoutX="213.0" layoutY="436.0" prefHeight="18.0" prefWidth="186.0" />
+      <Button layoutX="24.0" layoutY="424.0" mnemonicParsing="false" onAction="#addNewBookOnAction" prefHeight="42.0" prefWidth="159.0" text="Add new book to library" />
+   </children>
+</AnchorPane>
