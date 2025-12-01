@@ -1,5 +1,7 @@
 package com.example.prisonmanagementsystem.Ushain_2320676.Warden;
 
+import javafx.event.ActionEvent;
+
 public class WardenDashboardController
 {
     @javafx.fxml.FXML
