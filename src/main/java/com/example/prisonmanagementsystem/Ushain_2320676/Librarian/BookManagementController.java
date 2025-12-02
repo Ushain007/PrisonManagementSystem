@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BookManagementController {
-
     @FXML
     private TextField authorNameTextField;
     @FXML
