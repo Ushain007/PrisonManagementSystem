@@ -20,9 +20,9 @@ public class BookManagementController {
 
     @FXML
     private TextField authorNameTextField;
-    @javafx.fxml.FXML
-    private ComboBox categoryComboBox;
-    @javafx.fxml.FXML
+    @FXML
+    private ComboBox<String> categoryComboBox;
+    @FXML
     private Label bookAddedMessageOutput;
     @javafx.fxml.FXML
     private TextField publicationYearTextField;
