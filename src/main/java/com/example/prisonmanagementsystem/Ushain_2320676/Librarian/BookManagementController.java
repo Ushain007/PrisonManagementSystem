@@ -28,6 +28,37 @@ public class BookManagementController
 
     @javafx.fxml.FXML
     public void addNewBookOnAction(ActionEvent actionEvent) {
+        if (bookTitleTextField.getText().isEmpty() ||
+                authorNameTextField.getText().isEmpty() ||
+                categoryComboBox.getValue() == null ||
+                publicationYearTextField.getText().isEmpty() ||
+                quantityTextField.getText().isEmpty() ||
+                bookSectionTextField.getText().isEmpty()) {
+
+            bookAddedMessageOutput.setStyle("-fx-text-fill: red;");
+            bookAddedMessageOutput.setText("Error: All fields are mandatory.");
+            return;
+        }
+
+        try {
+            int year = Integer.parseInt(publicationYearTextField.getText());
+            int quantity = Integer.parseInt(quantityTextField.getText());
+            Book_Model newBook = new Book_Model(
+                    bookTitleTextField.getText(),
+                    authorNameTextField.getText(),
+                    categoryComboBox.getValue(),
+                    year,
+                    quantity,
+                    bookSectionTextField.getText()
+            );
+
+            saveBookToFile(newBook);
+            bookAddedMessageOutput.setText("Success: Book added to Library!");
+            clearFields();
+
+        } catch (NumberFormatException e) {
+            bookAddedMessageOutput.setText("Error: Year and Quantity must be numbers.");
+        }
     }
 
     @javafx.fxml.FXML
