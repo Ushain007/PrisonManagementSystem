@@ -30,7 +30,7 @@ public class BookManagementController {
     private TextField bookTitleTextField;
     @FXML
     private TextField quantityTextField;
-    @javafx.fxml.FXML
+    @FXML
     private TextField bookSectionTextField;
 
     private final String FILE_PATH = "Books.bin";
