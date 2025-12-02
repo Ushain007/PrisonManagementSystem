@@ -16,9 +16,9 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BookManagementController
-{
-    @javafx.fxml.FXML
+public class BookManagementController {
+
+    @FXML
     private TextField authorNameTextField;
     @javafx.fxml.FXML
     private ComboBox categoryComboBox;
