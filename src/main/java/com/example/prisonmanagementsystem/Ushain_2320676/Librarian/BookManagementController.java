@@ -29,7 +29,7 @@ public class BookManagementController
         categoryComboBox.getItems().addAll("Law", "Fiction", "Non-fiction", "History", "Science", "Biography");
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void addNewBookOnAction(ActionEvent actionEvent) {
         if (bookTitleTextField.getText().isEmpty() || authorNameTextField.getText().isEmpty() ||
                 categoryComboBox.getValue() == null || publicationYearTextField.getText().isEmpty() ||
