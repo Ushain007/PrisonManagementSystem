@@ -31,14 +31,9 @@ public class BookManagementController
 
     @javafx.fxml.FXML
     public void addNewBookOnAction(ActionEvent actionEvent) {
-        if (bookTitleTextField.getText().isEmpty() ||
-                authorNameTextField.getText().isEmpty() ||
-                categoryComboBox.getValue() == null ||
-                publicationYearTextField.getText().isEmpty() ||
-                quantityTextField.getText().isEmpty() ||
-                bookSectionTextField.getText().isEmpty()) {
-
-            bookAddedMessageOutput.setStyle("-fx-text-fill: red;");
+        if (bookTitleTextField.getText().isEmpty() || authorNameTextField.getText().isEmpty() ||
+                categoryComboBox.getValue() == null || publicationYearTextField.getText().isEmpty() ||
+                quantityTextField.getText().isEmpty() || bookSectionTextField.getText().isEmpty()) {
             bookAddedMessageOutput.setText("Error: All fields are mandatory.");
             return;
         }
