@@ -61,7 +61,6 @@ public class BookManagementController
 
     private void saveBookToFile(Book_Model newBook) {
         List<Book_Model> bookList = new ArrayList<>();
-
         File file = new File(FILE_PATH);
         if (file.exists()) {
             try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
