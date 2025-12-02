@@ -69,7 +69,6 @@ public class BookManagementController
                 System.out.println("No existing books found, creating new list.");
             }
         }
-
         bookList.add(newBook);
 
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
