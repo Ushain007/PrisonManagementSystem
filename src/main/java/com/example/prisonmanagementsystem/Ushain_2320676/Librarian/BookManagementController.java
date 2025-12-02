@@ -22,7 +22,9 @@ public class BookManagementController
     @javafx.fxml.FXML
     private TextField bookSectionTextField;
 
-    @javafx.fxml.FXML
+    private final String FILE_PATH = "Books.bin";
+
+    @FXML
     public void initialize() {
         categoryComboBox.getItems().addAll("Law", "Fiction", "Non-fiction", "History", "Science", "Biography");
     }
