@@ -26,7 +26,7 @@ public class BookManagementController {
     private Label bookAddedMessageOutput;
     @FXML
     private TextField publicationYearTextField;
-    @javafx.fxml.FXML
+    @FXML
     private TextField bookTitleTextField;
     @javafx.fxml.FXML
     private TextField quantityTextField;
