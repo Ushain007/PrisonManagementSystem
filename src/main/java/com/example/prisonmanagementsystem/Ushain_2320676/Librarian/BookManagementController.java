@@ -59,7 +59,43 @@ public class BookManagementController
         }
     }
 
-    @javafx.fxml.FXML
-    public void backOnClick(ActionEvent actionEvent) {
+    private void saveBookToFile(Book_Model newBook) {
+        List<Book_Model> bookList = new ArrayList<>();
+
+        File file = new File(FILE_PATH);
+        if (file.exists()) {
+            try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file))) {
+                bookList = (List<Book_Model>) ois.readObject();
+            } catch (IOException | ClassNotFoundException e) {
+                System.out.println("No existing books found, creating new list.");
+            }
+        }
+
+        bookList.add(newBook);
+
+        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(file))) {
+            oos.writeObject(bookList);
+        } catch (IOException e) {
+            e.printStackTrace();
+            bookAddedMessageOutput.setText("Error: Could not save to file.");
+        }
+    }
+
+    private void clearFields() {
+        bookTitleTextField.clear();
+        authorNameTextField.clear();
+        publicationYearTextField.clear();
+        quantityTextField.clear();
+        bookSectionTextField.clear();
+        categoryComboBox.setValue(null);
+    }
+
+    @FXML
+    public void backOnClick(ActionEvent actionEvent) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("LibrarianDashboardFXML.fxml"));
+        Parent root = loader.load();
+        Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
+        stage.setScene(new Scene(root));
+        stage.show();
     }
 }
