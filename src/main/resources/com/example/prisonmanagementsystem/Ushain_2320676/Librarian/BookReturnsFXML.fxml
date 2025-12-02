@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.prisonmanagementsystem.Ushain_2320676.Librarian.BookReturnsController">
+   <children>
+      <Label layoutX="288.0" layoutY="14.0" text="Process Book Return">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="686.0" layoutY="555.0" mnemonicParsing="false" onAction="#backOnClick" prefHeight="30.0" prefWidth="100.0" text="Back" />
+      <Label layoutX="28.0" layoutY="68.0" text="Search issue record" />
+      <TextField fx:id="searchTextField" layoutX="156.0" layoutY="63.0" prefHeight="26.0" prefWidth="355.0" />
+      <Button layoutX="523.0" layoutY="63.0" mnemonicParsing="false" onAction="#searchIssuedBookOnClick" text="Find Record" />
+      <Label layoutX="28.0" layoutY="123.0" text="Book Title" />
+      <Label fx:id="bookTitleLabel" layoutX="156.0" layoutY="122.0" prefHeight="19.0" prefWidth="355.0" text="---">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="167.0" text="Issue Date" />
+      <Label fx:id="issueDateLabel" layoutX="156.0" layoutY="167.0" text="---" />
+      <Label layoutX="27.0" layoutY="212.0" text="Borrower Name" />
+      <Label fx:id="borrowerNameLabel" layoutX="156.0" layoutY="212.0" text="---" />
+      <Label layoutX="27.0" layoutY="253.0" text="Due Date" />
+      <Label fx:id="dueDateLabel" layoutX="156.0" layoutY="253.0" text="---" />
+      <Label layoutX="28.0" layoutY="300.0" text="Overdue Status" />
+      <Label fx:id="overdueStatusLabel" layoutX="156.0" layoutY="300.0" text="---" />
+      <Label layoutX="28.0" layoutY="348.0" text="Calculated Fine" />
+      <Label layoutX="156.0" layoutY="348.0" text="0" />
+      <Label layoutX="260.0" layoutY="348.0" text="BDT" />
+      <Button layoutX="29.0" layoutY="393.0" mnemonicParsing="false" onAction="#processReturnOnAction" prefHeight="56.0" prefWidth="256.0" text="Process return" />
+      <Label fx:id="processReturnLabel" layoutX="324.0" layoutY="412.0" prefHeight="18.0" prefWidth="169.0" />
+   </children>
+</AnchorPane>
