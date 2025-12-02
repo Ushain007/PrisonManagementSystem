@@ -18,3 +18,38 @@ public class Book_Model implements Serializable {
         this.quantity = quantity;
         this.shelfSection = shelfSection;
     }
+
+
+    public String getTitle() {
+        return title;
+    }
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+    public int getPublicationYear() {
+        return publicationYear;
+    }
+
+    public int getQuantity() {
+        return quantity;
+    }
+    public String getShelfSection() {
+        return shelfSection;
+    }
+
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+    public void setShelfSection(String shelfSection) {
+        this.shelfSection = shelfSection;
+    }
+
+    @Override
+    public String toString() {
+        return title + " (" + publicationYear + ")";
+    }
+}
