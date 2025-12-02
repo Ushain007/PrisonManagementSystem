@@ -24,7 +24,7 @@ public class BookManagementController {
     private ComboBox<String> categoryComboBox;
     @FXML
     private Label bookAddedMessageOutput;
-    @javafx.fxml.FXML
+    @FXML
     private TextField publicationYearTextField;
     @javafx.fxml.FXML
     private TextField bookTitleTextField;
