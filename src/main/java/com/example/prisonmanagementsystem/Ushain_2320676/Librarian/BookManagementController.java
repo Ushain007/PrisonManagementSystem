@@ -24,6 +24,7 @@ public class BookManagementController
 
     @javafx.fxml.FXML
     public void initialize() {
+        categoryComboBox.getItems().addAll("Law", "Fiction", "Non-fiction", "History", "Science", "Biography");
     }
 
     @javafx.fxml.FXML
