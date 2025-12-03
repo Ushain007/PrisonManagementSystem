@@ -3,6 +3,31 @@ package com.example.prisonmanagementsystem.Ushain_2320676.Librarian;
 public class ViewBookDetailsController
 {
     @javafx.fxml.FXML
+    private Label issuedCopiesLabel;
+    @javafx.fxml.FXML
+    private ListView borrowerHistoryListView;
+    @javafx.fxml.FXML
+    private TableColumn availabilityColumn;
+    @javafx.fxml.FXML
+    private TableView booksTableView;
+    @javafx.fxml.FXML
+    private TableColumn authorColumn;
+    @javafx.fxml.FXML
+    private TableColumn bookTitleColumn;
+    @javafx.fxml.FXML
+    private Label detailIdLabel;
+    @javafx.fxml.FXML
+    private TextField searchTextField;
+    @javafx.fxml.FXML
+    private Label detailAuthorLabel;
+    @javafx.fxml.FXML
+    private TableColumn categoryColumn;
+    @javafx.fxml.FXML
+    private Label totalCopiesLabel;
+    @javafx.fxml.FXML
+    private Label detailTitleLabel;
+
+    @javafx.fxml.FXML
     public void initialize() {
     }
 
