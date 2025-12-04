@@ -1,4 +1,4 @@
-package com.example.prisonmanagementsystem.Ushain_2320676;
+package com.example.prisonmanagementsystem.Ushain_2320676.Librarian;
 
 import java.io.Serializable;
 
@@ -18,7 +18,6 @@ public class Book_Model implements Serializable {
         this.quantity = quantity;
         this.shelfSection = shelfSection;
     }
-
 
     public String getTitle() {
         return title;
