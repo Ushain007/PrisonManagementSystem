@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="571.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.air_plan_customer_service_agent_and_passengers_2222122.BuyTicket">
+   <children>
+      <Text layoutX="36.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NAME :" />
+      <Text layoutX="59.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID :" />
+      <Text layoutX="34.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text layoutX="125.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="visitor" />
+      <Text layoutX="83.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Najib rahman" />
+      <Text layoutX="86.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="346591" />
+      <Button layoutX="35.0" layoutY="43.0" mnemonicParsing="false" text="Back" />
+      <Text layoutX="34.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="visitors info">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="next" layoutX="545.0" layoutY="14.0" mnemonicParsing="false" text="Next" />
+      <Button fx:id="Dashboard" layoutX="95.0" layoutY="68.0" mnemonicParsing="false" text="Dashboard" />
+      <Button fx:id="PassengersEditProfile" layoutX="168.0" layoutY="169.0" mnemonicParsing="false" text="edit profile">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Button>
+      <Button fx:id="Bookings" layoutX="353.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Book Appointment" />
+      <Button fx:id="VisitorRegistration" layoutX="184.0" layoutY="65.0" mnemonicParsing="false" text="Visitor Registration" textFill="#001aff">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="Appointments" layoutX="440.0" layoutY="68.0" mnemonicParsing="false" text="Appointments" />
+      <Button fx:id="VisitRulesGuidelines" layoutX="545.0" layoutY="68.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="56.0" text="Visit Rules &amp; GuidelinesVisit Rules &amp; Guidelines" />
+      <ChoiceBox fx:id="timeBox" layoutX="443.0" layoutY="107.0" prefHeight="25.0" prefWidth="88.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="1. 8am" />
+                <String fx:value="2. 10am" />
+                <String fx:value="3. 1pm" />
+                <String fx:value="4. 5pm" />
+                <String fx:value="5. 8pm" />
+                <String fx:value="6. 10pm" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <Text layoutX="394.0" layoutY="124.0" strokeType="OUTSIDE" strokeWidth="0.0" text="time :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableGroupPassengers" layoutX="10.0" layoutY="322.0" prefHeight="249.0" prefWidth="581.0">
+         <columns>
+            <TableColumn id="254841" fx:id="HelicopterModelTable" maxWidth="1090.0" minWidth="30.0" prefWidth="150.0" text="prisoner  id" />
+            <TableColumn fx:id="timeTable" maxWidth="750.0" minWidth="30.0" prefWidth="70.0" text="time" />
+            <TableColumn fx:id="AvailabilityTable" maxWidth="670.0" minWidth="30.0" prefWidth="96.0" text="Availability " />
+            <TableColumn fx:id="timeTable1" maxWidth="750.0" minWidth="30.0" prefWidth="70.0" text="date" />
+            <TableColumn fx:id="SeatNumberTable" maxWidth="830.0" minWidth="30.0" prefWidth="94.0" />
+         </columns>
+      </TableView>
+      <Text layoutX="370.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prisoner  id : " wrappingWidth="112.126953125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="heliModel" layoutX="443.0" layoutY="143.0" prefHeight="25.0" prefWidth="92.0">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Rescue helicopter" />
+               <String fx:value="Transport helicopter" />
+               <String fx:value="VIP helicopter" />
+            </FXCollections>
+         </items>
+      </ChoiceBox>
+      <DatePicker fx:id="date" layoutX="375.0" layoutY="210.0" />
+      <Text layoutX="341.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="age" wrappingWidth="112.126953125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField layoutX="125.0" layoutY="249.0" />
+      <Text layoutX="76.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="name" wrappingWidth="112.126953125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="297.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="prisoner  id : " wrappingWidth="112.126953125">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <TextField layoutX="394.0" layoutY="249.0" />
+   </children>
+</AnchorPane>
