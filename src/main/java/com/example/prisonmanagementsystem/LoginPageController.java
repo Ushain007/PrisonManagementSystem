@@ -79,7 +79,6 @@ public class LoginPageController {
         showAlert("Login Failed", "Invalid Credentials. Check ID and Password properly.");
     }
 
-
     private void loadDashboard(ActionEvent event, String title, String fxmlPath) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
