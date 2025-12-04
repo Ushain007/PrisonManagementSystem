@@ -1,5 +1,6 @@
 package com.example.prisonmanagementsystem;
 
+import com.example.prisonmanagementsystem.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
